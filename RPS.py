@@ -3,7 +3,7 @@ import speech_recognition as sr
 import pyttsx3
 import random
 
-comp=random.randint(1,3)
+
 # Making the computer Speak
 engine=pyttsx3.init('sapi5')
 
@@ -37,7 +37,9 @@ def takeCommand():
 if __name__=="__main__":
 
     while True:
+
         query=takeCommand().lower()
+        comp = random.randint(1, 3)
         player = 0
         if query == "rock":
             player = 1
